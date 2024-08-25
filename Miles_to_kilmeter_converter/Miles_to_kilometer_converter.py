@@ -38,3 +38,4 @@ data = Entry(width=10)
 data.grid(column=1, row=0)
 
 window.mainloop()
+

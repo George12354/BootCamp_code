@@ -1,18 +1,15 @@
-# This is a sample Python script.
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-# from random import random
-# def print_hi(name):
-#     # Use a breakpoint in the code line below to debug your script.
-#     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-#
-#
-# # Press the green button in the gutter to run the script.
-# if __name__ == '__main__':
-#     print_hi('PyCharm')
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# from art import logo
+
 # Day 7 project(Hangman)
+import random
+
+from ASCII_Art import vs
+from code_data import data, resources, MENU
+
 #
+# from hangmaon_art import logo, stages
+#
+# print(logo)
 # word = ["sleep", "python", "gone"]
 # chosen_word = random.choice(word)
 # print(f"Pssst, the solution is {chosen_word}")
@@ -38,21 +35,31 @@
 #     if lives == 0:
 #         print("Game Over😌")
 #         break
+#     print(stages[lives])
 #     print(display)
 #     continue
-# Day 8.1 (Paint Area Calculator)
-# def Area_calculator(height, width, wall_area):
+
+
+#
+#
+# # Day 8.1 (Paint Area Calculator)
+#   import math
+# def area_calculator(height, width, wall_area):
 #     area = height * width
 #     num_of_paint = math.ceil(area / wall_area)
 #     print(f"The number of paints to use is {num_of_paint}")
+#
+#
 # # Note: To round up a number we import math and then use math.ceil(Dont forget)
-# Note: To round down a number use round(number)
+# # Note: To round down a number use round(number)
 #
 # test_h = int(input("Height of wall: "))
 # test_w = int(input("Width of wall: "))
 # coverage = 5
-# Area_calculator(height=test_h, width=test_w, wall_area=coverage)
-# Prime number checker
+# area_calculator(height=test_h, width=test_w, wall_area=coverage)
+#
+#
+# # Prime number checker
 # def prime_checker():
 #     n = int(input("Check this number: "))
 #     if n > 1:
@@ -64,7 +71,8 @@
 #                 print(f"{n} is a prime number")
 #     else:
 #         print(f"{n}is not a prime number")
-# from random import random
+#
+#
 # prime_checker()
 
 # or you can use a different approach
@@ -95,8 +103,10 @@
 #                 new_number = position + shift
 #                 display += alphabet[new_number]
 #             print(display)
+
+
 # def caesar(plain_text, shift_number, direction_path):
-#     display = " "
+#     display = str(" ")
 #     for letter in plain_text:
 #         if letter not in alphabet:
 #             display += letter
@@ -146,6 +156,7 @@
 #     # print(shift)
 # caesar(plain_text=text, shift_number=shift, direction_path=direction)
 # game()
+
 # Day 9 _Dictionaries, Nesting and the Secret Auction
 # programming_dictionary = {"Bug": " An error in a program that prevents the program from running as expected.",
 #                           "Function": "A piece of code that you can easily call over and over again.",
@@ -277,6 +288,7 @@
 #             # Am supposed to import some kind clear function
 #             break
 
+
 # Day 10 ; Functions with output
 # def format_name(f_name, l_name):
 #     # Below is an example of a Docstring.
@@ -346,7 +358,7 @@
 # operations = {"+": add, "-": subtract, "*": multiplication, "/": division}
 #
 # # def calculator():
-# # print(logo)
+# print(logo)
 # num1 = float(input("What's the first number?: "))
 #
 # go_again = True
@@ -368,16 +380,18 @@
 #                     # calculator()
 #                     num1 = int(input("What's the first number?: "))
 #                     continue
-# # Recursion : This is calling a function within its own definition
-# # calculator()
+# Recursion : This is calling a function within its own definition
+# calculator()
+
 
 # Day 11 --The Blackjack Capstone Project
 # play = True
 # while play:
 #     play_game = input("Do you want to play a game of Blackjack? Type 'y' or 'n' ")
 #     if play_game == "y":
-#         # from art import logo
-#         # print(logo)
+#         from Black_jack_art import logo
+#
+#         print(logo)
 #         cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 #         i = 0
 #         a = 0
@@ -428,6 +442,7 @@
 #         if play_game == "n":
 #             play = False
 # This is the end of the Blackjack program, there might be some error in the condition for the rules of the game
+
 
 # Day 12 - Scope _ Number Guessing Game-- Local scope# They exist within functions Global# What if we wanted it to be
 # accessible outside the function? Well, now we need to think about something called global scope. The only
@@ -485,6 +500,7 @@
 #     if levels == "hard":
 #         game_levels(attempt=5)
 
+
 # Day 13 -- Debugging
 # Describe the bug
 # def my_function():
@@ -492,21 +508,24 @@
 #
 #         if i == 20:
 #             print("You got it")
+#
+#
 # my_function()
-
-# Play Computer
+#
+# # Play Computer
 # year = int(input("What's your year of birth? "))
 # if 1980 <= year <= 1994:
 #     print("You are a millennial.")
 # elif year > 1994:
 #     print("You are a Gen Z.")
-
-# Print is Your Friend
+#
+# # Print is Your Friend
 # pages = int(input("Number of pages: "))
 # word_per_page = int(input("Number of words per page: "))
 # total_words = pages * word_per_page
 # print(total_words)
-
+#
+#
 # def mutate(a_list):
 #     b_list = []
 #     for i in range(len(a_list)):
@@ -545,6 +564,7 @@
 #     else:
 #         print(number)
 
+
 # Day 14 Higher Lower Game
 # print(logo)
 # score = 0
@@ -571,7 +591,7 @@
 #     country_B = str(fact[3])
 #     print(f"Against B: {select_B[name]}, a {select_B[description]}, from {select_B[country]} ")
 #
-#     followers = input("Who has more followers? Type 'A' or 'B':").lower
+#     followers = input("Who has more followers? Type 'A' or 'B':").upper()
 #
 #     if followers == "A" and select_A[follower_count] > select_B[follower_count]:
 #         score += 1
@@ -586,6 +606,7 @@
 #     else:
 #         print(f"Sorry, that's wrong. Final score: {score} ")
 #         game_on = False
+
 
 # Day 15-- coffee-machine
 # coffee_on = True
@@ -702,6 +723,7 @@
 # needed.
 # The end of Procedural Programming
 
+
 # Day 16 ____Object Oriented Programming (OOP)
 
 # The reason why Object-Oriented Programming is called that is because it's trying to model a real world object.
@@ -746,8 +768,8 @@
 # while calling of functions or methods require such
 # Note: A function that is tied to an object is called a method.
 
-# import turtle
-# timmy = turtle.Turtle()
+import turtle
+timmy = turtle.Turtle()
 # print(timmy)
 
 
@@ -769,11 +791,13 @@
 #     timmy.forward(100)
 #     timmy.left(90.0)
 #     shorter way of writing the code.
+
 # for dashed_line in range(15):
 #     timmy.forward(10)
 #     timmy.penup()
 #     timmy.forward(10)
 #     timmy.pendown()
+
 # drawing different shapes
 # for _ in range(3):
 #     timmy.right(120)
@@ -807,36 +831,36 @@
 #     timmy.right(360/10)
 #     timmy.forward(100)
 
-# colours = ["cornflowerBlue", "DarkOrchid", "DeepSkyBlue", "LightSeaGreen", "wheat", "SlateGray", "SeaGreen"]
-# turtle.colormode(255)
+colours = ["cornflowerBlue", "DarkOrchid", "DeepSkyBlue", "LightSeaGreen", "wheat", "SlateGray", "SeaGreen"]
+turtle.colormode(255)
 
 
 # Here I tapped into the turtle module and set the color mode to 255, because it might not be within that range.
 
-# for steps in range(100):
-#     for c in ('blue', 'red', 'green'):
-#         timmy.color(c)
-#         timmy.forward(steps)
-#         timmy.right(50)
+for steps in range(100):
+    for c in ('blue', 'red', 'green'):
+        timmy.color(c)
+        timmy.forward(steps)
+        timmy.right(50)
 
 
 # Didn't write this code entirely on my own, took from Angela
-# def moves():
-#     movement = [0, 90, 180, 270]
-#     timmy.forward(30)
-#     timmy.setheading(random.choice(movement))
-#     return movement
+def moves():
+    movement = [0, 90, 180, 270]
+    timmy.forward(30)
+    timmy.setheading(random.choice(movement))
+    return movement
 
 
 # In this function I utilized the keyword 'tuple' and it's usage
-# def random_color():
-#     r = random.randint(0, 255)
-#     g = random.randint(0, 255)
-#     b = random.randint(0, 255)
-#     color_tuple = (r, g, b)
-#     return timmy.color(color_tuple)
-#
-#
+def random_color():
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    color_tuple = (r, g, b)
+    return timmy.color(color_tuple)
+
+
 # is_on = True
 # while is_on:
 #     timmy.pensize(7)
@@ -852,11 +876,11 @@
 #     timmy.left(7.5)
 #     timmy.circle(100)
 #
-
+#
 # def move_forward():
 #     timmy.forward(50)
-#
-#
+
+
 # my_screen.listen()
 #  we have to bind a function that will be triggered when a particular key is
 #  pressed on the keyboard.
@@ -910,6 +934,7 @@
 # nemo = Fish()
 # nemo.breathe()
 # nemo.swim()
+
 
 #                   FILE HANDLING
 

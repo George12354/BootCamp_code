@@ -1,6 +1,7 @@
 # f = open("../../PycharmProjects/CSV_Data/weather_data - S.csv", "r")
 # new_f = f.readlines()
 # print(new_f)
+import pandas
 
 # To work with the code we need to extract the data, using the help of an inbuilt library, first import the CSV library.
 
@@ -21,7 +22,8 @@
 #     if len(row[1]) <= 2 or row[1] != "temp":
 #         temperatures.append(int(row[1]))
 # print(temperatures)
-#
+
+
 # But there is an easier way to go about analyzing this data with the use of Pandas library.
 # print(data["temp"])
 # print(type(data))
@@ -67,7 +69,7 @@
 # }
 # data = pandas.DataFrame(data_dict)
 #
-# # To create a csv file for the data
+# # To create a csv file for the
 # data.to_csv("new_data.csv")
 #
 # Goal: Create a CSV called squirrel_count, that has a small table which contains the fur color and list the no of
@@ -98,9 +100,10 @@
 # }
 # squirrel_fur_color = pandas.DataFrame(primary_fur_color)
 # squirrel_fur_color.to_csv("squirrel_count.csv")
-# I know Angela will have a shorter approach to all this jargon code that i have written here.
+# I know Angela will have a shorter approach to all this jargon code that I have written here.
 #
-Angela's code
+# Angela's code
+
 data = pandas.read_csv("2018_Central_Park_Squirrel_Census_-_Squirrel_Data_20231231.csv")
 grey_squirrels_count = len(data[data["Primary Fur Color"] == "Gray"])
 cinnamon_squirrels_count = len(data[data["Primary Fur Color"] == "Cinnamon"])

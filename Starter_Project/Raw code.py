@@ -51,39 +51,39 @@ import random
 # Brief sample on how to access the values in a dictionary(seems like a dictionary within a dictionary)
 
 # Generate a random account from the game date.
-# account_a = random.choice(data)
-# account_b = random.choice(data)
-# if account_a == account_b:
-#     account_b = random.choice(data)
-#
-# # Format the account data into printable format.
-# account_name = account_a["self"]
-# account_descr = account_a["description"]
-# account_country = account_a["country"]
-# print(f"{account_name}, a {account_descr}, from {account_country}")
+account_a = random.choice(data)
+account_b = random.choice(data)
+if account_a == account_b:
+    account_b = random.choice(data)
 
-# print(MENU["espresso"]["ingredients"]["water"] - 21)
-# ["cost"]
-# resources["water:"] - MENU["espresso"]["ingredients"]["water"], "ml"
-# resources["milk:"] - MENU["espresso"]["ingredients"]["milk"], "ml"
-# resources["coffee:"] - MENU["espresso"]["ingredients"]["coffee"], "g"
+# Format the account data into printable format.
+account_name = account_a["self"]
+account_descr = account_a["description"]
+account_country = account_a["country"]
+print(f"{account_name}, a {account_descr}, from {account_country}")
 
-# original_1 = resources["water:"]
-# original_2 = resources["milk:"]
-# original_3 = resources["coffee:"]
-# if original_1 > MENU["espresso"]["ingredients"]["water"] \
-#         and original_2 > MENU["espresso"]["ingredients"]["milk"] \
-#         and original_3 > MENU["espresso"]["ingredients"]["coffee"]:
-#     original_1 = resources["water:"] - MENU["espresso"]["ingredients"]["water"]
-#     original_2 = resources["milk:"] - MENU["espresso"]["ingredients"]["milk"]
-#     original_3 = resources["coffee:"] - MENU["espresso"]["ingredients"]["coffee"]
-# else:
-#     if original_1 < MENU["espresso"]["ingredients"]["water"]:
-#         print("Sorry there is not enough water")
-#     elif original_2 < MENU["espresso"]["ingredients"]["milk"]:
-#         print("Sorry there is not enough milk")
-#     elif original_3 > MENU["espresso"]["ingredients"]["coffee"]:
-#         print("Sorry there is not enough coffee")
+print(MENU["espresso"]["ingredients"]["water"] - 21)
+["cost"]
+resources["water:"] - MENU["espresso"]["ingredients"]["water"], "ml"
+resources["milk:"] - MENU["espresso"]["ingredients"]["milk"], "ml"
+resources["coffee:"] - MENU["espresso"]["ingredients"]["coffee"], "g"
+
+original_1 = resources["water:"]
+original_2 = resources["milk:"]
+original_3 = resources["coffee:"]
+if original_1 > MENU["espresso"]["ingredients"]["water"] \
+        and original_2 > MENU["espresso"]["ingredients"]["milk"] \
+        and original_3 > MENU["espresso"]["ingredients"]["coffee"]:
+    original_1 = resources["water:"] - MENU["espresso"]["ingredients"]["water"]
+    original_2 = resources["milk:"] - MENU["espresso"]["ingredients"]["milk"]
+    original_3 = resources["coffee:"] - MENU["espresso"]["ingredients"]["coffee"]
+else:
+    if original_1 < MENU["espresso"]["ingredients"]["water"]:
+        print("Sorry there is not enough water")
+    elif original_2 < MENU["espresso"]["ingredients"]["milk"]:
+        print("Sorry there is not enough milk")
+    elif original_3 > MENU["espresso"]["ingredients"]["coffee"]:
+        print("Sorry there is not enough coffee")
 
 # class MyClass:
 #     def __init__(self, name, age):
